@@ -5,7 +5,7 @@ const int Max = 1e6 + 10;
 
 bool isPrime[Max];
 vector<int> prime;
-vector<pair<int, int>> analyze;
+int analyze[Max];
 
 void eratos(){
 	memset(isPrime, true, sizeof(isPrime));
@@ -23,16 +23,13 @@ void eratos(){
 }
 
 void analyzeNumber(int a){
-    int i = 0, j = 0;
+    int i = 0;
     while (a > 1){
         if (a % prime[i] == 0){
-            analyze[j].first = prime[i];
-            analyze[j].second = 0;
             while (a % prime[i] == 0){
                 a /= prime[i];
-                analyze[j].second++;
+                analyze[prime[i]]++;
             }
-            j++;
         }
         i++;
     }
@@ -43,5 +40,9 @@ int main(){
     int a;
     cin >> a;
     analyzeNumber(a);
-    for (int i = 0; i < analyze.size(); ++i) cout << analyze[i].first << " " << analyze[i].second << "\n";
+    for (int i = 0; i <= 1e6; ++i){
+        if (isPrime[i] && analyze[i]){
+            cout << i << " " << analyze[i] << "\n";
+        }
+    }
 }

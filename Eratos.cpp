@@ -22,5 +22,9 @@ void eratos(){
 }
 
 int main(){
-	// Driver code
+	eratos();
+    int n;
+    cin >> n;
+    if (isPrime[i]) cout << "YES";
+    else cout << "NO";
 }

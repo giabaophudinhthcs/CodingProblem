@@ -20,3 +20,7 @@ void eratos(){
 		if (isPrime[i]) prime.push_back(i);
 	}
 }
+
+int main(){
+	// Driver code
+}

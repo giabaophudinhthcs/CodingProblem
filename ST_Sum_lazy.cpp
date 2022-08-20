@@ -26,7 +26,7 @@ void ST_Sum::updateUtil(int stStart, int stEnd, int s, int e, int val, int si){
 	// ??
 }
 
-void ST_Sum::update(int arr[], int n, int i, int val){
+void ST_Sum::update(int arr[], int n, int s, int e, int val){
 	// ??
 }
 

@@ -3,7 +3,7 @@ using namespace std;
 
 const int nMax = 4e6 + 40;
 
-class ST_Sum{
+class ST_Sum_lazy{
 	public:
 		int tree[nMax];
 		int lazy[nMax];
@@ -15,30 +15,33 @@ class ST_Sum{
     	void print();
 };
 
-void ST_Sum::print(){
+void ST_Sum_lazy::print(){
     for (int i = 0; i < 9; ++i){
         cout << this->tree[i] << " ";
     }
     cout << "\n";
 }
 
-void ST_Sum::updateUtil(int stStart, int stEnd, int s, int e, int val, int si){
+void ST_Sum_lazy::updateUtil(int stStart, int stEnd, int l, int r, int val, int si){
+	// Case 1:
+	if (this->lazy[si] != 0){
+		
+	}
+}
+
+void ST_Sum_lazy::update(int arr[], int n, int s, int e, int val){
 	// ??
 }
 
-void ST_Sum::update(int arr[], int n, int s, int e, int val){
+int ST_Sum_lazy::sumUtil(int stStart, int stEnd, int qStart, int qEnd, int si){
 	// ??
 }
 
-int ST_Sum::sumUtil(int stStart, int stEnd, int qStart, int qEnd, int si){
+int ST_Sum_lazy::sum(int n, int qStart, int qEnd){
 	// ??
 }
 
-int ST_Sum::sum(int n, int qStart, int qEnd){
-	// ??
-}
-
-void ST_Sum::initTree(int arr[], int stStart, int stEnd, int si){
+void ST_Sum_lazy::initTree(int arr[], int stStart, int stEnd, int si){
 	if (stStart == stEnd){
 		this->tree[si] = arr[stStart];
 		return;

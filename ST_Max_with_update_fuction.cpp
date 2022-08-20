@@ -68,5 +68,5 @@ void ST_Max::initTree(int arr[], int stStart, int stEnd, int si){
 }
 
 int main(){
-	// Driver code
+	// Driver code;
 }

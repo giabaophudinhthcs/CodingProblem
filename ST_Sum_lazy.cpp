@@ -67,7 +67,7 @@ int ST_Sum_lazy::sumUtil(int ss, int se, int l, int r, int si){
 		lazy[si] = 0;
 	}
 	
-	if (ss > se || ss > qe || se < qs) return 0;
+	if (ss > se || ss > r || se < l) return 0;
 	
 	if (se <= r && l <= ss) return this->tree[si];
 	

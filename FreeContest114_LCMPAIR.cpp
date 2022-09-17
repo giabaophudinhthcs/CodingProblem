@@ -1,3 +1,9 @@
+// Link đề:
+// https://oj.vnoi.info/problem/fc114_lcmpair (Free Contest 114)
+// https://oj.vnoi.info/problem/fct032_lcmpair (Free Contest Testing Round 32)
+
+// Link sol: https://drive.google.com/drive/folders/1Z7axgipYbUr8hsiqdTHaXeD_kpHHJPk9
+
 #include <bits/stdc++.h>
 
 using namespace std;

@@ -9,7 +9,7 @@ const int nMax = 4e6 + 10;
 long long a[nMax], tree[nMax], lazy[nMax];
 
 void fix(int node, int sl, int sr){ // For lazy pending
-    tree[node] += (se-ss+1) * lazy[node]; // Add the pending
+    tree[node] += (sr - sl + 1) * lazy[node]; // Add the pending
     if (sl != sr){ // sl != sr <=> this isn't a leaf node
         // Move the pending to its child
         lazy[2 * node] += lazy[node];
@@ -61,6 +61,6 @@ int main(){
             cin >> x;
             update(1, 1, n, l, r, x);
         }
-		else cout << sum(1, 1, n, x, y) << "\n";
+		else cout << sum(1, 1, n, l, r) << "\n";
 	}
 }

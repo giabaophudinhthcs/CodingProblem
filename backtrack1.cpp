@@ -9,7 +9,7 @@ void printPer(){
     for (int i = 1; i <= n; ++i){
         cout << a[i] << " ";
     }
-    cout << "\n"
+    cout << "\n";
 }
 
 void back(int i){
@@ -19,7 +19,7 @@ void back(int i){
             used[j] = true;
             if (i == n) printPer();
             else back(i + 1);
-            used[i] = false;
+            used[j] = false;
         }
     }
 }
@@ -27,4 +27,5 @@ void back(int i){
 int main(){
     cin >> n;
     back(1);
+    return 0;
 }

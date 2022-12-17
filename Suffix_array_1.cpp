@@ -27,7 +27,7 @@ int main(){
 	int k = 0;
 	while ((1 << k) < n){
 		vector<pair<pair<int, int>, int>> b(n);
-		for (int i = 0; i < n; ++i) b[i] = {{c[i], c[i + (1 << k) % n]}, i};
+		for (int i = 0; i < n; ++i) b[i] = {{c[i], c[(i + (1 << k)) % n]}, i};
 		sort(b.begin(), b.end());
 		for (int i = 0; i < n; ++i) p[i] = b[i].nd;
 		c[p[0]] = 0;

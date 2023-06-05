@@ -1,3 +1,5 @@
+// Link: https://oj.vnoi.info/problem/fc001_kid
+
 #include <bits/stdc++.h>
 
 #define FOR(i, a, b) for(int i = a; i <= b ; ++i)

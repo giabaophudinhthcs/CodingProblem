@@ -7,22 +7,27 @@ const int nMax = 1e4 + 10;
 class DSU{
     public:
     	int parent[nMax];
-    	void make(int x);
-    	int find(int v);
-    	void combine(int x, int y);
+        int sz[nMax];
+    
+    	void make(int v){
+            this->parent[v] = v;
+            sz[v] = 1;
+        }
+    
+    	int find(int v){
+            return (v == this->parent[v]) ? v : this->parent[v] = this->find(this->parent[v]);
+        }
+    
+    	void combine(int x, int y){
+            x = this->find(x);
+            y = this->find(y);
+            if (x != y){
+                if (sz[x] < sz[y]) swap(x, y);
+                this->parent[y] = x;
+                sz[x] += sz[y];
+            }
+        }
 };
-
-void DSU::make(int x){
-    this->parent[x] = x;
-}
-
-int DSU::find(int x){
-    return (x == this->parent[x]) ? x : this->find(this->parent[x]);
-}
-
-void DSU::combine(int x, int y){
-    this->parent[this->find(y)] = this->find(x);
-}
 
 DSU test;
 

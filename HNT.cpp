@@ -1,4 +1,4 @@
-// Link: https://oj.luyencode.net/problem/HNT - THIS LINK ISN'T EXIST ANYMORE =((
+// Link: https://oj.luyencode.net/problem/HNT
 
 #include <bits/stdc++.h>
 

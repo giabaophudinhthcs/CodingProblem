@@ -1,4 +1,4 @@
-// Link: https://oj.luyencode.net/problem/HNX - THIS LINK ISN'T EXIST ANYMORE =((
+// Link: https://oj.luyencode.net/problem/HNX
 
 #include <bits/stdc++.h>
 

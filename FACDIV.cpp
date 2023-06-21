@@ -1,4 +1,4 @@
-// Link: https://oj.luyencode.net/problem/FACDIV - THIS LINK ISN'T EXIST ANYMORE =((
+// Link: https://oj.luyencode.net/problem/FACDIV
 
 #include <bits/stdc++.h>
 

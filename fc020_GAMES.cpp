@@ -1,3 +1,6 @@
+// Link 1: https://oj.vnoi.info/problem/fc020_games
+// Link 2: https://oj.vnoi.info/problem/fct043_games
+
 #include <bits/stdc++.h>
 
 #define FOR(i, a, b) for(int i = a; i <= b ; ++i)

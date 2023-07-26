@@ -25,35 +25,37 @@ const int oo = 2e9 + 10;
 const ll ooll = 2e18 + 10;
 const auto seed = chrono::steady_clock::now().time_since_epoch().count();
 
-int m, n, res, u, v, uv, vu, dist, G;
+int m, n, res, X, Y, Z;
 
 int main(){
 	ios_base::sync_with_stdio(0);
 	cin.tie(0);
 	cin >> m >> n;
-	FOR(p, 1, m - 1){
-		cout << p << ' ' << p + 1 << endl;
-	}
+	FOR(t, 1, m - 1) cout << t << " " << t + 1 << endl;
 	res = m - 1;
-	
-	mt19937 g(seed);
+	mt19937 gen(seed);
 	FOR(Q, 1, 40){
-	    G = g();
-	    G = abs(G);
-	    u = (G % (n - 1)) + 1;
-	    v = (G % (n - u)) + u + 1;
-	    
-	    cout << "distance " << u << ' ' << v << endl;
-	    cin >> dist;
-	    
-	    cout << "subtree " << u << ' ' << v << endl;
-	    cin >> uv;
-	    
-	    cout << "subtree " << v << ' ' << u << endl;
-	    cin >> vu;
-	    
-	    res = max(res, uv + vu - dist);
+		int u, v, g;
+		g = gen();
+		g = abs(g);
+		u = (g % (n - 1)) + 1;
+		v = (g % (n - u)) + u + 1;
+		
+		// distance
+		// subtree
+		
+		cout << "subtree " << u << " " << v << endl;
+		cin >> X;
+		
+		cout << "subtree " << v << " " << u << endl;
+		cin >> Y;
+		
+		cout << "distance " << u << " " << v << endl;
+		cin >> Z;
+		
+		res = max(res, X + Y - Z);
 	}
+	
 	cout << "! " << res << endl;
 	return 0;
 }

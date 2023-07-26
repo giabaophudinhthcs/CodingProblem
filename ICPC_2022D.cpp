@@ -37,7 +37,7 @@ int main(){
 	res = m - 1;
 	
 	mt19937 g(seed);
-	FOR(Q, 1, 150){
+	FOR(Q, 1, 40){
 	    G = g();
 	    G = abs(G);
 	    u = (G % (n - 1)) + 1;

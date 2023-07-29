@@ -1,3 +1,5 @@
+// Link: https://oj.vnoi.info/problem/fc040_square
+
 #include <bits/stdc++.h>
 
 #define FOR(i, a, b) for(int i = a; i <= b ; ++i)

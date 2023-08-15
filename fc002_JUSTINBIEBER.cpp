@@ -1,3 +1,6 @@
+// Link 1: https://oj.vnoi.info/problem/fc002_justinbieber
+// Link 2: https://oj.vnoi.info/problem/fc010_justinbieber
+
 #include <bits/stdc++.h>
 
 #define FOR(i, a, b) for(int i = a; i <= b ; ++i)

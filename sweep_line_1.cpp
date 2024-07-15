@@ -1,4 +1,7 @@
-// Sweep line 1: Find the distance of the closest pair of point (in Euclid distance)
+/*
+	Sweep line 1: Find the distance of the closest pair of point (in Euclid
+	distance)
+*/
 
 #include <bits/stdc++.h>
 
